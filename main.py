@@ -12,13 +12,13 @@ while a:
         archivo_nuevo = input("Ingrese la ruta del archivo: ")
         cargar_archivo = open(archivo_nuevo, "r")
         print(cargar_archivo.readlines()) 
-        cargar_archivo.close() 
 
     elif eleccion == 2:
         print(" ")
     elif eleccion == 3:
         print(" ")
     elif eleccion == 4:
+
         print("*----------------------------------------------------------------*")
         print("--- André Valentín Méndez Cárdenas ---")
         print("--- Carnet: 201801399 ---")
@@ -26,6 +26,7 @@ while a:
         print("--- Ingenieria en Ciencias y Sistemas ---")
         print("--- 4to Semestre ---")
         print("*----------------------------------------------------------------*")
+
     elif eleccion == 5:
         print(eleccion)
     elif eleccion == 6:
