@@ -14,3 +14,4 @@ while a:
     elif eleccion == 4:
         print("----------------------------------------------------------------")
         print("---Bienvenido---")
+        print("Hola")
