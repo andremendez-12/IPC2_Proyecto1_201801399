@@ -1,23 +1,22 @@
-import time
 from io import open
 
-a = True
+x = True
 
-while a:
-    print("Seccione una opcion")
-    eleccion = int(input("1. Cargar archivo \n2. Procesar archivo \n3. Escribir archivo de salida \n4. Mostrar datos del estudiante \n5. Generar grafica \n6. Salir \n"))
-    if eleccion == 1:
+while x:
+    print("Seccione una de las opciones siguientes: ")
+    opcion = int(input("1. Cargar archivo \n2. Procesar archivo \n3. Escribir archivo de salida \n4. Mostrar datos del estudiante \n5. Generar grafica \n6. Salir \n"))
+    if opcion == 1:
         print(" ...Abriendo el archivo ")
 
         archivo_nuevo = input("Ingrese la ruta del archivo: ")
         cargar_archivo = open(archivo_nuevo, "r")
         print(cargar_archivo.readlines()) 
 
-    elif eleccion == 2:
+    elif opcion == 2:
         print(" ")
-    elif eleccion == 3:
+    elif opcion == 3:
         print(" ")
-    elif eleccion == 4:
+    elif opcion == 4:
 
         print("*----------------------------------------------------------------*")
         print("--- André Valentín Méndez Cárdenas ---")
@@ -27,9 +26,8 @@ while a:
         print("--- 4to Semestre ---")
         print("*----------------------------------------------------------------*")
 
-    elif eleccion == 5:
-        print(eleccion)
-    elif eleccion == 6:
+    elif opcion == 5:
+        print(" ")
+    elif opcion == 6:
         print("Saliendo del programa...")
-        time.sleep(3)
-        a = False
+        x = False
