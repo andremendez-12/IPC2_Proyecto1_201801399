@@ -9,10 +9,11 @@ while x:
     
     if opcion == 1:
         print(" ...Abriendo el archivo \n")
-
-        mydoc = minidom.parse('datos.xml')
+        #aqui se solicita la ruta del archivo de entrada
+        archivo_entrada = input('Ingrese ruta de su archivo: ')
+        mydoc = minidom.parse(archivo_entrada)
         campos = mydoc.getElementsByTagName('terreno')
-
+        #aqui imprimirá en la consola los atributos de cada objeto existente en el archivo
         for elem in campos:
             print(elem.attributes['nombre'].value)
 
