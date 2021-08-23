@@ -9,4 +9,24 @@
       <y>1</y>
    </posicioninicio>
  </terreno>
+ <terreno nombre='terreno2'>
+   <dimension>
+      <m>3</m>
+      <n>3</n>
+   </dimension>
+   <posicioninicio>
+      <x>1</x>
+      <y>1</y>
+   </posicioninicio>
+ </terreno>
+ <terreno nombre='terreno3'>
+   <dimension>
+      <m>4</m>
+      <n>4</n>
+   </dimension>
+   <posicioninicio>
+      <x>1</x>
+      <y>1</y>
+   </posicioninicio>
+ </terreno>
 </terrenos>
