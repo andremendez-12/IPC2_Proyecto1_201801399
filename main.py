@@ -12,16 +12,14 @@ while x:
     if opcion == 1:
         print(" ...Abriendo el archivo \n")
         Archivo.leer_archivo(Archivo)
+        
     elif opcion == 2:
         print("...Procesamiento de su archivo \n")
 
-        #entry = lista() # llamo a la lista a ser ejecutada
-        #entry.agregar_enfrente(5) 
-        #entry.agregaral_final(8) 
-        #entry.agregar_enfrente(9) 
-        #entry.mostrar_lista() 
         
     elif opcion == 3:
+        print("Creación del archivo de salida---")
+
         root = ET.Element("root")
         doc = ET.SubElement(root, "doc")
         nodo1 = ET.SubElement(doc, "nodo1", name="nodo")

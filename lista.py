@@ -19,3 +19,8 @@ class lista:
         while nodo != None:
             print(nodo.info, end =" => ")
             nodo = nodo.siguiente
+        #entry = lista() # llamo a la lista a ser ejecutada
+        #entry.agregar_enfrente(5) 
+        #entry.agregaral_final(8) 
+        #entry.agregar_enfrente(9) 
+        #entry.mostrar_lista() 
