@@ -1,6 +1,7 @@
-from io import open
 from lista import lista
+from archivo import Archivo
 from xml.dom import minidom
+import xml.etree.cElementTree as ET
 
 x = True
 
@@ -10,23 +11,27 @@ while x:
     
     if opcion == 1:
         print(" ...Abriendo el archivo \n")
-        #aqui se solicita la ruta del archivo de entrada
-        archivo_entrada = input('Ingrese ruta de su archivo: ')
-        mydoc = minidom.parse(archivo_entrada)
-        campos = mydoc.getElementsByTagName('terreno')
-        #aqui imprimirá en la consola los atributos de cada objeto existente en el archivo
-        for elem in campos:
-            print(elem.attributes['nombre'].value)
-
+        Archivo.leer_archivo(Archivo)
     elif opcion == 2:
-        s = lista() # llamo a la lista a ser ejecutada
-        s.agregar_enfrente(5) 
-        s.agregaral_final(8) 
-        s.agregar_enfrente(9) 
+        print("...Procesamiento de su archivo \n")
 
-        s.mostrar_lista() 
+        #entry = lista() # llamo a la lista a ser ejecutada
+        #entry.agregar_enfrente(5) 
+        #entry.agregaral_final(8) 
+        #entry.agregar_enfrente(9) 
+        #entry.mostrar_lista() 
+        
     elif opcion == 3:
-        print(" ")
+        root = ET.Element("root")
+        doc = ET.SubElement(root, "doc")
+        nodo1 = ET.SubElement(doc, "nodo1", name="nodo")
+        nodo1.text = "Texto de nodo1"
+        ET.SubElement(doc, "nodo2", atributo="algo").text = "texto 2"
+        arbol = ET.ElementTree(root)
+
+        salida_archivo = input('Ingrese la ruta para guardar su archivo de salida: ')
+        arbol.write(salida_archivo)
+
     elif opcion == 4:
 
         print("Datos del creador\n")
