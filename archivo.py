@@ -24,6 +24,7 @@ class Archivo:
         #para obtener las valores de gasolina de cada casilla
         gaso = mydoc.getElementsByTagName('posicion')
         #aqui imprimirá en la consola los atributos de cada objeto existente en el archivo
+        print("Nombres de los terrenos")
         for elem in nombre_terreno:
             print(elem.attributes['nombre'].value)
         #muestra la posicion del objeto
