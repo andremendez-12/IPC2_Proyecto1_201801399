@@ -5,8 +5,8 @@ class Proceso_Archivo:
         mi_terreno = input('Ingrese el nombre de su terreno: ') 
 
         #aqui se hará el cálculo de la ruta
-
         print("Calculando la ruta óptima para su explorador...")
+        
 
         #aqui se hará el cálculo del combustible
 
