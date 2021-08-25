@@ -1,4 +1,5 @@
 from io import open
+from lista import lista
 from xml.dom import minidom
 
 x = True
@@ -18,7 +19,12 @@ while x:
             print(elem.attributes['nombre'].value)
 
     elif opcion == 2:
-        print(" ")
+        s = lista() # llamo a la lista a ser ejecutada
+        s.agregar_enfrente(5) 
+        s.agregaral_final(8) 
+        s.agregar_enfrente(9) 
+
+        s.mostrar_lista() 
     elif opcion == 3:
         print(" ")
     elif opcion == 4:
