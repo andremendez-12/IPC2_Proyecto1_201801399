@@ -1,4 +1,4 @@
-from lista import lista
+from tupla import tuplaEnlazada
 from archivo import Archivo
 from procesar import Proceso_Archivo
 from arcSalida import Archivo_Salida
@@ -15,6 +15,7 @@ while x:
     if opcion == 1:
         print("...Abriendo el archivo \n")
         Archivo.leer_archivo(Archivo)
+        print("Archivo recibido correctamente!!!!")
 
     elif opcion == 2:
         print("...Procesamiento de su archivo \n")
@@ -37,7 +38,7 @@ while x:
 
     elif opcion == 5:
         print("...Generando gráfica solución")
-        
+
     elif opcion == 6:
         print("Saliendo del programa...")
         x = False

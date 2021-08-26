@@ -9,7 +9,7 @@ class Proceso_Archivo:
 
         matriz = []
         for i in matriz:
-            for elem in pos_x:
+            for elem in matriz:
                 print(elem.firstChild.data)
 
         #aqui se hará el cálculo de la ruta
