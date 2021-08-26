@@ -36,7 +36,8 @@ while x:
         print("*----------------------------------------------------------------*")
 
     elif opcion == 5:
-        print(" ")
+        print("...Generando gráfica solución")
+        
     elif opcion == 6:
         print("Saliendo del programa...")
         x = False

@@ -1,4 +1,5 @@
 import xml.etree.cElementTree as ET
+from procesar import Proceso_Archivo
 class Archivo_Salida:
     def __init__(self, nuevo_archivo):
        self.nuevo_archivo = nuevo_archivo
@@ -14,3 +15,5 @@ class Archivo_Salida:
 
         salida_archivo = input('Ingrese la ruta para guardar su archivo de salida: ')
         arbol.write(salida_archivo)
+
+        print("Archivo de salida creado con éxito!!!!!")
