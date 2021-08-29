@@ -5,9 +5,9 @@ from arcSalida import Archivo_Salida
 from xml.dom import minidom
 import xml.etree.cElementTree as ET
 
-x = True
+contador_inicio_menu = True
 
-while x:
+while contador_inicio_menu:
     print("---------------MENU PROGRAM 1.0-----------------")
     print("Seccione una de las opciones siguientes: ")
     opcion = int(input("1. Cargar archivo \n2. Procesar archivo \n3. Escribir archivo de salida \n4. Mostrar datos del estudiante \n5. Generar grafica \n6. Salir \n"))
@@ -41,4 +41,4 @@ while x:
 
     elif opcion == 6:
         print("Saliendo del programa...")
-        x = False
+        contador_inicio_menu = False
