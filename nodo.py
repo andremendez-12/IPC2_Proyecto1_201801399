@@ -1,4 +1,4 @@
-class nodo: 
+class Nodo(object): 
     def __init__(self, info = None, siguiente = None, gasolina = None, nombre = None, posI = None, posF = None, m = None, n = None):
         self.info = info
         self.siguiente = siguiente

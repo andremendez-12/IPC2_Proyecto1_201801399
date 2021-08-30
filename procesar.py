@@ -1,4 +1,5 @@
 from archivo import Archivo
+from pila import Pila
 class Proceso_Archivo:
     def __init__(self, mi_terreno, pos_x, pos_y, dimen_x, dimen_y, m, n):
        self.mi_terreno = mi_terreno
@@ -12,10 +13,7 @@ class Proceso_Archivo:
     def Lectura_terreno(self):
         mi_terreno = input('Ingrese el nombre de su terreno: ') 
 
-        matriz = []
-        for i in matriz:
-            for elem in matriz:
-                print(elem.firstChild.data)
+        Pila.imprimir(Pila)
 
         #aqui se hará el cálculo de la ruta
         print("Calculando la ruta óptima para su explorador...")

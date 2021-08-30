@@ -1,4 +1,4 @@
-from tupla import tuplaEnlazada
+from pila import Pila
 from archivo import Archivo
 from procesar import Proceso_Archivo
 from arcSalida import Archivo_Salida
